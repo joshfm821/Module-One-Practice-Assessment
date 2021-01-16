@@ -8,6 +8,15 @@
  *  
  */
 
-function numberIncludes0() {}
+const numberIncludes0 = num => {
+    stringNum = num.toString();
+    stringArr = stringNum.split('');
+    for (let i = 0; i < stringArr.length; i++) {
+        if (stringArr[i].includes('0')){
+            return true;
+        }
+    }
+    return false;
+}
 
 module.exports = numberIncludes0;

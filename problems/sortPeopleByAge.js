@@ -17,6 +17,12 @@
 ]
  */
 
-function sortPeopleByAge() {}
+const sortPeopleByAge = people => {
+  return people.sort((a,b)=> {
+    return a.age - b.age;
+  }).map((el)=>{
+      return el;
+  })
+}
 
 module.exports = sortPeopleByAge;

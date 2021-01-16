@@ -7,6 +7,20 @@
  * returns 15
  */
 
- function productOfOddNumbers() {}
+const productOfOddNumbers = (nums) => {
+    let product = 1;
+    let isEven = nums.every((num) => {
+       return num % 2 === 0;
+    })
+    if (isEven) {
+        return 0;
+    }
+    nums.forEach((el) => {
+        if( el % 2 === 1) {
+            product *= el;
+        }
+    })
+    return product;
+ }
 
  module.exports = productOfOddNumbers

@@ -8,6 +8,8 @@
  *
  */
 
-function isDivisibleBy9() {}
+const isDivisibleBy9 = num => {
+    return num % 9 === 0;
+}
 
 module.exports = isDivisibleBy9;
