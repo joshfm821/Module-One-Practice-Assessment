@@ -9,14 +9,17 @@
  */
 
 const numberIncludes0 = num => {
-    stringNum = num.toString();
-    stringArr = stringNum.split('');
-    for (let i = 0; i < stringArr.length; i++) {
-        if (stringArr[i].includes('0')){
-            return true;
-        }
-    }
-    return false;
+    // stringNum = num.toString();
+    // stringArr = stringNum.split('');
+    // for (let i = 0; i < stringArr.length; i++) {
+    //     if (stringArr[i].includes('0')){
+    //         return true;
+    //     }
+    // }
+    // return false;
+
+    let numStr = num.toString();
+    return numStr.includes('0');
 }
 
 module.exports = numberIncludes0;
